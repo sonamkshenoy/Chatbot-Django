@@ -1,0 +1,21 @@
+{% extends "base_layout.html" %}
+
+{% block content %}
+
+
+
+    <div class="m-5">
+      <form class="logout-link" action="/" method="post">
+        <div class="form-group m-10">
+
+          <a href="{% url 'accounts:signup' %}" class='text-white'><button type="button" class="btn btn-primary btn-lg btn-block m-1">Sign up</button></a>
+          <a href="{% url 'accounts:login' %}" class='text-white'><button type="button" class="btn btn-primary btn-lg btn-block m-1">Log in</button></a>
+
+
+
+
+        </div>
+      </form>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,1 @@
+document.getElementById("user_resp").addEventListener("keyup",function(e){e.preventDefault(),13===e.keyCode&&document.getElementById("triggerme").click()});

@@ -1,0 +1,41 @@
+{% extends "base_layout.html" %}
+
+{% block content %}
+
+
+  <div class='form-group m-4'>
+
+    <h1>Log in if you have an account already </h1>
+    <form class="" action="{% url 'accounts:login' %}" method="post">
+
+
+      {% csrf_token %}
+
+      <label for="emailid">E-mail Id</label>
+      <input type="text" name="emailid" class="form-control" value=""></input></br>
+
+      <label for="password">Password</label>
+      <input type="password" name="password" class="form-control" value=""></input></br>
+
+      <button type="submit" class="btn btn-primary">Log in</button>
+
+    </form>
+
+    {% if exception %}
+      <p> {{ exception }}</p>
+    {% endif %}
+
+    {% if success %}
+    <div class='text-center'></br></br></br></br>
+      <p>Log in successful! Hit proceed to speak to the chatbot! </p>
+      <!-- <button type='button' class="btn btn-primary text-center"><a href="/start_conv/" class='text-white'>Proceed</a></button> -->
+      <a href="/options/" class='text-white'><button type='button' class="btn btn-primary text-center">Proceed</button></a>
+
+    </div>
+    {% endif %}
+
+
+  </div>
+
+
+{% endblock %}
