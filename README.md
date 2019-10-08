@@ -1,6 +1,6 @@
-# UniBot
+# UniBot : *Chatbot-Django*
 
-Unibot is a Web Application for chatbot, built using Django and Firebase database. It has been deployed on Heroku.
+Unibot is a Web Application for chatbot, built using Bootstrap, Django and Firebase. It has been deployed on Heroku.
 Find us at: **https://unibot-mlab.herokuapp.com**!
 ##### Note: Due to hefty size of the machine learning model, website takes some time to load, but does show up for sure after refreshing for a few times, if not the first time. :)
 
